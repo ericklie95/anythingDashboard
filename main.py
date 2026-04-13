@@ -5,7 +5,6 @@ def main():
     # --- UI CONFIGURATION ---
     st.set_page_config(page_title="My Command Centre", layout="wide")
     st.title("⚡ Personal Intelligence Dashboard")
-    # print("Hello, World!")
     sidebar_display()
     main_layout()
 
@@ -36,23 +35,36 @@ def sidebar_display():
 def main_layout():
     st.header("📊 Analytics")
     st.write("This section will display your performance analytics based on the logged data.")
+
     mytabs = ["📅 Today's Overview", "📈 Performance Analytics", "⚡ Quick Actions"]
-    tab1, tab2, tab3 = st.tabs(mytabs)
+    tabs = st.tabs(mytabs)
 
-    with tab1:
-        st.subheader(mytabs[0])
-        st.header("Today's Summary")
-        st.write("Here you can see a summary of today's activities and stats.") 
+    tab_definitions = [
+        {
+            "label": mytabs[0],
+            "title": "Today's Summary",
+            "body": "Here you can see a summary of today's activities and stats.",
+        },
+        {
+            "label": mytabs[1],
+            "title": "Performance Trends",
+            "body": "This section will show your performance trends and insights over time.",
+        },
+        {
+            "label": mytabs[2],
+            "title": "Quick Actions",
+            "body": "This section will provide quick access to your most used features and tools.",
+        },
+    ]
 
-    with tab2:
-        st.subheader(mytabs[1])
-        st.header("Performance Trends")
-        st.write("This section will show your performance trends and insights over time.") 
+    for tab, tab_definition in zip(tabs, tab_definitions):
+        render_tab_content(tab, tab_definition)
 
-    with tab3:
-        st.subheader(mytabs[2])
-        st.header("Quick Actions")
-        st.write("This section will provide quick access to your most used features and tools.")
+
+def render_tab_content(tab, tab_definition):
+    tab.subheader(tab_definition["label"])
+    tab.header(tab_definition["title"])
+    tab.write(tab_definition["body"])
 
 if __name__ == "__main__":
     main()
