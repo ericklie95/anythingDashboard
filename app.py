@@ -17,7 +17,10 @@ def run():
 
     tab1, tab2, tab3 = st.tabs(["📅 Today's Overview", "📈 Performance Analytics", "⚡ Quick Actions"])
 
+<<<<<<< HEAD
     '''
+=======
+>>>>>>> ec38d21 (making it modular for each visible tabs have its own file)
     with tab1:
         display_todays_overview()
 
@@ -26,4 +29,7 @@ def run():
 
     with tab3:
         display_quick_actions()
+<<<<<<< HEAD
     '''
+=======
+>>>>>>> ec38d21 (making it modular for each visible tabs have its own file)
