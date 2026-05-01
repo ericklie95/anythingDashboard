@@ -17,10 +17,10 @@ def run():
 
     tab1, tab2, tab3 = st.tabs(["📅 Today's Overview", "📈 Performance Analytics", "⚡ Quick Actions"])
 
-    """
+
     with tab1:
         display_todays_overview()
-
+    """
     with tab2:
         display_performance_analytics()
 
