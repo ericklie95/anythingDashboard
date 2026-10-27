@@ -17,8 +17,11 @@
 
 | D7 | Lyrics | **All kinds:** plain, line-synced and word-by-word (karaoke). Use vivi-music's non-Musixmatch providers (LRCLIB, KuGou, YouLyPlus, Paxsenix, Unison, BetterLyrics, YouTube). **Musixmatch is removed** because of its licence restriction | 2026-10-27 |
 | D8 | Minimum Android | **Android 14 (API 34)**: `minSdk = 34`, raised from vivi-music's 26 | 2026-10-27 |
+| D9 | Source scope | **YouTube Music only.** No regular YouTube videos (Q4b) | 2026-10-27 |
+| D10 | History reporting | **Report plays to YouTube history**, with an on/off toggle in settings (Q4c) | 2026-10-27 |
+| D11 | Features | Yes / Later / No marked per feature in §5 | 2026-10-27 |
 
-Still open: Q4 (local-only playlists), Q4b–Q4c, Q5, Q6, Q10–Q15.
+Still open: Q4 (local-only playlists vs synced), Q5 (phase order; what to do with "No"/"Later" features vivi already has), Q6 (download storage location), Q10–Q15.
 
 ---
 
@@ -110,49 +113,49 @@ These two goals are in some tension:
 
 ## 5. Proposed feature list and phasing
 
-Phases are only a suggestion. Please mark each feature **Yes / No / Later** (see Q5).
+Marked by you on 2026-10-27: **Yes** = build/keep now, **Later** = after the Yes items, **No** = not wanted. Phase ordering not yet confirmed (Q5).
 
 ### Phase 1 — MVP (usable daily player)
-- [ ] Search (songs, albums, artists, playlists, videos)
-- [ ] Album, artist and playlist pages
-- [ ] Streaming playback, ad-free
-- [ ] Background playback + notification and lock-screen controls
-- [ ] Queue: play next, add to queue, reorder, shuffle, repeat
-- [ ] Local library: like songs, create/edit local playlists
-- [ ] Playback history (local)
-- [ ] Audio quality setting (e.g. Low / Normal / High; Wi-Fi vs mobile data)
-- [ ] Settings screen; no telemetry anywhere
+- **Yes** — Search (songs, albums, artists, playlists)
+- **Yes** — Album, artist and playlist pages
+- **Yes** — Streaming playback, ad-free
+- **Yes** — Background playback + notification and lock-screen controls
+- **Yes** — Queue: play next, add to queue, reorder, shuffle, repeat
+- **Yes** — Local library: like songs, create/edit local playlists
+- **Later** — Playback history (local)
+- **Yes** — Audio quality setting (e.g. Low / Normal / High; Wi-Fi vs mobile data)
+- **Later** — Settings screen; no telemetry anywhere
 
 ### Phase 2 — Account sync
-- [ ] Sign in with YouTube/Google account (method per Q3)
-- [ ] Import/sync: Liked songs, saved playlists, own playlists, subscribed artists, saved albums
-- [ ] Sync direction per Q4 (one-way pull vs two-way)
-- [ ] Personalised home feed (Quick picks, Mixes) if signed in
-- [ ] History reporting toggle (see §3.3)
+- **Yes** — Sign in with YouTube/Google account (WebView login, D3)
+- **Yes** — Import/sync: Liked songs, saved playlists, own playlists, subscribed artists, saved albums
+- **Yes** — Two-way sync (D4)
+- **Yes** — Personalised home feed (Quick picks, Mixes) if signed in
+- **Yes** — History reporting toggle (see §3.3)
 
 ### Phase 3 — Comfort features
-- [ ] Offline downloads + smart cache with size limit
-- [ ] Synced lyrics (open providers such as LRCLIB and YouTube's own lyrics; **not** Musixmatch)
-- [ ] Sleep timer
-- [ ] Radio / "start mix from this song" (autoplay similar tracks)
-- [ ] Equaliser (system audio-effect based)
-- [ ] SponsorBlock: skip non-music intros/outros in music videos
-- [ ] Skip silence, audio normalisation (loudness)
-- [ ] Home-screen widget
+- **Yes** — Offline downloads + smart cache with size limit
+- **Yes** — Lyrics: plain, line-synced and word-by-word (non-Musixmatch providers, see D7)
+- **Later** — Sleep timer
+- **Yes** — Radio / "start mix from this song" (autoplay similar tracks)
+- **Yes** — Equaliser (system audio-effect based)
+- **Yes** — SponsorBlock: skip non-music intros/outros in music videos
+- **Yes** — Skip silence, audio normalisation (loudness)
+- **Later** — Home-screen widget
 
 ### Phase 4 — Optional extras (from vivi-music; confirm if wanted)
-- [ ] Android Auto
-- [ ] Last.fm scrobbling
-- [ ] Discord rich presence
-- [ ] Import from Spotify (playlists)
-- [ ] Song recognition (Shazam-like)
-- [ ] Animated "canvas" artwork
-- [ ] Listen Together (shared sessions)
-- [ ] In-app updater (checks GitHub Releases)
-- [ ] Backup / restore local data to a file
-- [ ] Video playback mode (watch the music video, not just audio)
-- [ ] Tablet / landscape layouts
-- [ ] Localisation (multiple languages)
+- **Later** — Android Auto
+- **Later** — Last.fm scrobbling
+- **Yes** — Discord rich presence
+- **Yes** — Import from Spotify (playlists)
+- **Later** — Song recognition (Shazam-like)
+- **No** — Animated "canvas" artwork
+- **No** — Listen Together (shared sessions)
+- **Later** — In-app updater (checks GitHub Releases)
+- **Yes** — Backup / restore local data to a file
+- **No** — Video playback mode (watch the music video, not just audio)
+- **No** — Tablet / landscape layouts
+- **No** — Localisation (multiple languages)
 
 ---
 
