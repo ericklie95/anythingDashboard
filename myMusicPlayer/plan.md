@@ -29,7 +29,15 @@
 | D17 | Timeline | **Ongoing hobby project**, no target date (Q15) | 2026-10-27 |
 | D18 | Musixmatch | **Removed from the current code** (commit "Remove Musixmatch lyrics provider"). It stays in old history so vivi-music updates still merge cleanly | 2026-10-27 |
 
-Still open: Q4 (local-only playlists vs synced), Q5 (phase order; what to do with "No"/"Later" features vivi already has; keep vivi's settings screen now?), Q6 (download storage location), Q14 (Android Studio installed?).
+| D19 | Existing vivi features | Features vivi-music already has are **kept and available now**, including ones marked Later in §5 | 2026-10-27 |
+| D20 | Removed integrations | **JioSaavn and Spotify removed** (commits "Remove JioSaavn streaming", "Remove Spotify integration"). This also drops Spotify playlist import, Spotify lyrics and Spotify Canvas. Motionartwork animated backgrounds are unaffected | 2026-10-27 |
+| D21 | Settings | Keep vivi-music's settings screen now; trim it as features are removed | 2026-10-27 |
+| D22 | Local playlists | **Choose per playlist** whether it syncs with YouTube Music. vivi already has this: the "Create playlist" dialog has a "Sync playlist" switch | 2026-10-27 |
+| D23 | Phase order | Confirmed as listed in §5 | 2026-10-27 |
+| D24 | Downloads | Save downloaded songs to a **phone folder the user picks** (Android folder picker). **New work:** vivi only keeps downloads in app-private storage | 2026-10-27 |
+| D25 | Building | No Android Studio. The repo's GitHub Actions workflow (`CI & Debug Build`) builds a debug APK on every push; download it from the run's Artifacts and install on the phone | 2026-10-27 |
+
+Still open: whether features marked **No** in §5 that vivi already has (animated artwork, Listen Together, video playback, tablet layouts, other languages) should be removed, hidden or left as they are.
 
 ---
 
@@ -155,7 +163,7 @@ Marked by you on 2026-10-27: **Yes** = build/keep now, **Later** = after the Yes
 - **Later** — Android Auto
 - **Later** — Last.fm scrobbling
 - **Yes** — Discord rich presence
-- **Yes** — Import from Spotify (playlists)
+- **Removed** — Import from Spotify (playlists) (D20)
 - **Later** — Song recognition (Shazam-like)
 - **No** — Animated "canvas" artwork
 - **No** — Listen Together (shared sessions)
