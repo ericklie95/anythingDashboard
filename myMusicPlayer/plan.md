@@ -21,7 +21,15 @@
 | D10 | History reporting | **Report plays to YouTube history**, with an on/off toggle in settings (Q4c) | 2026-10-27 |
 | D11 | Features | Yes / Later / No marked per feature in §5 | 2026-10-27 |
 
-Still open: Q4 (local-only playlists vs synced), Q5 (phase order; what to do with "No"/"Later" features vivi already has), Q6 (download storage location), Q10–Q15.
+| D12 | Devices | **Phone only** (Q10) | 2026-10-27 |
+| D13 | Design | **Keep vivi-music's look**: Material You, colours from album art (Q11) | 2026-10-27 |
+| D14 | Name / package | App name **myMusicPlayer**, package ID **`com.ericklie.mymusicplayer`** (Q12) | 2026-10-27 |
+| D15 | Distribution | **Build locally** for now; no release pipeline yet (Q13) | 2026-10-27 |
+| D16 | Testing | Tested on **your physical Android phone** (Q14) | 2026-10-27 |
+| D17 | Timeline | **Ongoing hobby project**, no target date (Q15) | 2026-10-27 |
+| D18 | Musixmatch | **Removed from the current code** (commit "Remove Musixmatch lyrics provider"). It stays in old history so vivi-music updates still merge cleanly | 2026-10-27 |
+
+Still open: Q4 (local-only playlists vs synced), Q5 (phase order; what to do with "No"/"Later" features vivi already has; keep vivi's settings screen now?), Q6 (download storage location), Q14 (Android Studio installed?).
 
 ---
 
