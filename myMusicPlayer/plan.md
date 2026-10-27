@@ -12,9 +12,10 @@
 | D2 | Build approach | **Fork vivi-music** and customise it (Q2 option a). The project inherits **GPL-3.0**. The proprietary `musixmatch` module must be removed or replaced | 2026-10-27 |
 | D3 | Sign-in | **Same as vivi-music:** WebView Google login, session cookie stored on device (§3.4 option A) | 2026-10-27 |
 | D4 | Sync direction | **Two-way.** Likes and playlist edits in the app are written back to YouTube Music | 2026-10-27 |
-| D5 | Accounts | **Single Google account only.** No account switching | 2026-10-27 |
+| D5 | Accounts | **Single Google account only.** No account switching. The user picks which email to sign in with on Google's own login page; the app doesn't need to know the account in advance. Account risk (§3.2) accepted on that basis | 2026-10-27 |
+| D6 | Repo setup | **Private** repo `ericklie95/myMusicPlayer` for **personal use only**. It contains vivi-music's full commit history (not a GitHub fork, because forks of public repos can't be private). vivi-music is added as the `upstream` remote; pull in its fixes with `git fetch upstream` then `git merge upstream/main` | 2026-10-27 |
 
-Still open: Q2b (repo visibility), Q2c (audience), Q4 (local-only playlists), Q4b–Q4c, Q5–Q16, and whether you accept the account risk in §3.2 (Q16).
+Still open: Q4 (local-only playlists), Q4b–Q4c, Q5–Q15.
 
 ---
 
