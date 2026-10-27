@@ -15,7 +15,10 @@
 | D5 | Accounts | **Single Google account only.** No account switching. The user picks which email to sign in with on Google's own login page; the app doesn't need to know the account in advance. Account risk (§3.2) accepted on that basis | 2026-10-27 |
 | D6 | Repo setup | **Private** repo `ericklie95/myMusicPlayer` for **personal use only**. It contains vivi-music's full commit history (not a GitHub fork, because forks of public repos can't be private). vivi-music is added as the `upstream` remote; pull in its fixes with `git fetch upstream` then `git merge upstream/main` | 2026-10-27 |
 
-Still open: Q4 (local-only playlists), Q4b–Q4c, Q5–Q15.
+| D7 | Lyrics | **All kinds:** plain, line-synced and word-by-word (karaoke). Use vivi-music's non-Musixmatch providers (LRCLIB, KuGou, YouLyPlus, Paxsenix, Unison, BetterLyrics, YouTube). **Musixmatch is removed** because of its licence restriction | 2026-10-27 |
+| D8 | Minimum Android | **Android 14 (API 34)**: `minSdk = 34`, raised from vivi-music's 26 | 2026-10-27 |
+
+Still open: Q4 (local-only playlists), Q4b–Q4c, Q5, Q6, Q10–Q15.
 
 ---
 
