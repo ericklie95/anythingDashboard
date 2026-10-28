@@ -36,8 +36,9 @@
 | D23 | Phase order | Confirmed as listed in §5 | 2026-10-27 |
 | D24 | Downloads | Save downloaded songs to a **phone folder the user picks** (Android folder picker). **New work:** vivi only keeps downloads in app-private storage | 2026-10-27 |
 | D25 | Building | No Android Studio. The repo's GitHub Actions workflow (`CI & Debug Build`) builds a debug APK on every push; download it from the run's Artifacts and install on the phone | 2026-10-27 |
+| D26 | "No" features vivi already has | **Left as they are** (not removed or hidden): animated artwork, Listen Together, video playback, tablet layouts, other languages. "No" in §5 now means "no further work planned" | 2026-10-28 |
 
-Still open: whether features marked **No** in §5 that vivi already has (animated artwork, Listen Together, video playback, tablet layouts, other languages) should be removed, hidden or left as they are.
+No open questions. Next build work: export downloads to a user-picked folder (D24), package ID `com.ericklie.mymusicplayer` and app name (D14), and `minSdk = 34` (D8).
 
 ---
 
